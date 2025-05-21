@@ -1,4 +1,4 @@
-# 3 Write a Python program to find N!.
+# 3 Write a Python program to find N factorial.
 
 num=int(input("Enter Digit to find Factorial : "))
 
