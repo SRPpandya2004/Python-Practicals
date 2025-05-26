@@ -10,3 +10,26 @@ Each of the  subsequent lines describes an entry in the form of  space-separated
 After the  lines of phone book entries, there are an unknown number of lines of queries. Each line (query) contains a  to look up, and you must continue reading lines until there is no more input.
 
 Note: Names consist of lowercase English alphabetic letters and are first names only.
+
+
+# Read input from STDIN. Print output to STDOUT
+import sys
+
+# Read the number of entries
+n = int(input())
+
+# Initialize dictionary to store phonebook data
+phone_book = {}
+
+# Populate the phonebook
+for _ in range(n):
+    name, num = input().split()
+    phone_book[name] = num  # Store name as key and phone number as value
+
+# Process queries until EOF
+for line in sys.stdin:
+    query = line.strip()
+    if query in phone_book:
+        print(f"{query}={phone_book[query]}")
+    else:
+        print("Not found")
