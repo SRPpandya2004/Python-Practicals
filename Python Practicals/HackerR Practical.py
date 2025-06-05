@@ -15,7 +15,6 @@
 # Read input from STDIN. Print output to STDOUT
 
 import sys
-
 # Read the number of entries
 n = int(input())
 
