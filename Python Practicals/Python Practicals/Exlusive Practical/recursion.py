@@ -1,7 +1,6 @@
 
 num= int(input("Enter the num = "))
 
-
 def fact(n):
 
     if n==0 or n==1:
