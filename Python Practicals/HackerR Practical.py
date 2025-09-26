@@ -3,6 +3,7 @@
 # Note: Your phone book should be a Dictionary/Map/HashMap data structure.
 
 # Input Format
+
 # The first line contains an integer, , denoting the number of entries in the phone book.
 # Each of the  subsequent lines describes an entry in the form of  space-separated values on a single line. The first value is a friend's name, and the second value is an -digit phone number.
 
